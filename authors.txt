@@ -3,7 +3,7 @@ Jagholin: everything except react(can quickly watch videos on udemy though)
 jammera
 AshishSingh
 sdeagh
-Matt
+Matt : HTML, CSS, SQL, JS, React, Node (Fairly new to the last 3)
 VV -- Vishnuvarthan -- vvarthan7 --> HTML, CSS, JS, React, Node
 leinka
 Divyateja -- Divyateja04 (github)
