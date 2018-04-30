@@ -6,3 +6,4 @@ sdeagh
 Matt
 leinka
 Divyateja -- Divyateja04 (github)
+Diane : HTML, CSS, JS, Node, Python, stuff I know just a little, React, Express, Flask, Django, Mongo, REST
