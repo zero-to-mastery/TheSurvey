@@ -8,3 +8,4 @@ AshishSingh
 sdeagh
 Matt
 NullCherry : HTML, CSS, JS, React, Python
+kern = [ gh: https://github.com/pavelisp ], [ Skills: Design, Illustrator, Photoshop, SVG, HTML, CSS, JS, Basic MongoDB, Lettering ]
