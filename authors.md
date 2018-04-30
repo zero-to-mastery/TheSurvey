@@ -33,8 +33,8 @@
 #### kern [Github](https://github.com/Pavelisp)
 — **skills:** Design, Illustrator, Photoshop, SVG, HTML, CSS, JS, Basic MongoDB, Lettering
 
-#### Matt
-—  **skills:** HTML, CSS, SQL, JS, React, Node (Fairly new to the last 3)
+#### Matt [Github](https://github.com/MattCSmith)
+—  **skills:** Design, Photoshop, HTML, CSS, SQL, JS, React, Node (Fairly new to the last 3)
 
 #### jammera
 
