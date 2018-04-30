@@ -1,5 +1,5 @@
 SamirJouni : HTML, CSS, JS, Express, Node, SQL, Design. 
-Jagholin: everything except react(can quickly watch videos on udemy though)
+Jagholin: everything except react(can quickly watch videos on udemy though). Not a designer
 jammera
 AshishSingh
 sdeagh
