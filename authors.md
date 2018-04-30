@@ -42,5 +42,8 @@
 
 #### sdeagh
 
+#### blbns [Github](https://github.com/balabis)
+— **skills:** CSS, JS, ReactJS, NodeJS, ExpressJS, PostgreSQL, Photoshop.
+
 
 
