@@ -56,3 +56,8 @@
 
 #### delux [Github](https://github.com/deluxscript)
 — **skills:** HTML, CSS, JS, ReactJS, NodeJS, ExpressJS, PHP, Firebase, Little knowledge with MongDB
+
+#### Andrew A.
+— **skills:** Some knowledge of HTML & CSS. Willing to help in any area needed.
+
+
