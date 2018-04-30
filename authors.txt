@@ -6,7 +6,8 @@ Divyateja -- Divyateja04 (github)--> HTML , CSS, JS,Illustrator and Photoshop (M
 NullCherry : HTML, CSS, JS, React, Python
 Abdus: HTML, CSS, JS, NodeJS, MongoDB
 kern = [ gh: https://github.com/pavelisp ], [ Skills: Design, Illustrator, Photoshop, SVG, HTML, CSS, JS, Basic MongoDB, Lettering ]
+Matt : HTML, CSS, SQL, JS, React, Node (Fairly new to the last 3)
 jammera
 AshishSingh
 sdeagh
-Matt
+
