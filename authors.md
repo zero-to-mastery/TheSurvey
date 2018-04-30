@@ -1,4 +1,4 @@
-#SamirJouni : HTML, CSS, JS, Express, Node, SQL, Design. 
+#SamirJouni : HTML, CSS, JS, Express, Node, SQL, Design.
 #Jagholin: everything except react(can quickly watch videos on udemy though). Not a designer
 #VV -- Vishnuvarthan -- vvarthan7 --> HTML, CSS, JS, React, Node, Photoshop
 #Diane : HTML, CSS, JS, Node, Python, stuff I know just a little, React, Express, Flask, Django, Mongo, REST
