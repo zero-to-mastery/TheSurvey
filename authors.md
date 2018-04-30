@@ -3,7 +3,7 @@
 
 
 #### SamirJouni [Github](https://github.com/SamirJouni)
-— **skills:** HTML, CSS, JS, Express, Node, SQL, Design. 
+— **skills:** HTML, CSS, JS, Express, Node, SQL, Design.
 
 
 #### Jagholin
@@ -45,9 +45,8 @@
 #### blbns [Github](https://github.com/balabis)
 — **skills:** CSS, JS, ReactJS, NodeJS, ExpressJS, PostgreSQL, Photoshop.
 
-#### JustinTime42 
+#### JustinTime42
 — **skills:** HTML, CSS, JS, React, Node, Database
 
-
-
-
+#### Panconpeenga [Github](https://github.com/Panconpeenga)
+- **skills:** HTML, CSS, JS
