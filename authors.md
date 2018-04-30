@@ -54,3 +54,5 @@
 ### esslushy
 - **skills:** HTML, CSS, JS, some Node, can learn any language relatively quickly if needed.
 
+#### delux [Github](https://github.com/deluxscript)
+— **skills:** HTML, CSS, JS, ReactJS, NodeJS, ExpressJS, PHP, Firebase, Little knowledge with MongDB
