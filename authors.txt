@@ -1,5 +1,5 @@
 SamirJouni : HTML, CSS, JS, Express, Node, SQL, Design. 
-Jagholin
+Jagholin: everything except react(can quickly watch videos on udemy though)
 jammera
 AshishSingh
 sdeagh
