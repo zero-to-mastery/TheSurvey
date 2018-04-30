@@ -59,3 +59,8 @@
 
 #### leinka [Github](https://github.com/leinka)
 — **skills:** HTML, CSS, JS (lvl this course), Adobe CC (PS, AI, PR, AE, XD), UX (lvl beginner), ArtRage (digital drawing & painting :D)
+
+#### Andrew A.
+— **skills:** Some knowledge of HTML & CSS. Willing to help in any area needed.
+
+
