@@ -48,6 +48,7 @@
 #### JustinTime42 
 — **skills:** HTML, CSS, JS, React, Node, Database
 
-
+### esslushy
+- **skills:** HTML, CSS, JS, some Node, can learn any language relatively quickly if needed.
 
 
