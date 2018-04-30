@@ -10,7 +10,7 @@
 — **skills:** everything except react(can quickly watch videos on udemy though). Not a designer
 
 
-#### VV -- Vishnuvarthan -- vvarthan7
+#### VV -- Vishnuvarthan -- [vvarthan7-github](https://github.com/vvarthan7)
 — **skills:** HTML, CSS, JS, React, Node, Photoshop
 
 
@@ -50,3 +50,7 @@
 
 #### Panconpeenga [Github](https://github.com/Panconpeenga)
 - **skills:** HTML, CSS, JS
+
+### esslushy
+- **skills:** HTML, CSS, JS, some Node, can learn any language relatively quickly if needed.
+
