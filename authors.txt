@@ -1,4 +1,4 @@
-SamirJouni
+SamirJouni : HTML, CSS, JS, Express, Node, SQL, Design. 
 Jagholin
 jammera
 AshishSingh
