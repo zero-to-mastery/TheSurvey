@@ -56,3 +56,6 @@
 
 #### delux [Github](https://github.com/deluxscript)
 — **skills:** HTML, CSS, JS, ReactJS, NodeJS, ExpressJS, PHP, Firebase, Little knowledge with MongDB
+
+#### leinka [Github](https://github.com/leinka)
+— **skills:** HTML, CSS, JS (lvl this course), Adobe CC (PS, AI, PR, AE, XD), UX (lvl beginner), ArtRage (digital drawing & painting :D)
