@@ -77,3 +77,6 @@
 
 #### Daenz [Github] (https://github.com/Daenza)
 -**skills:**HTML, CSS, Bootstrap4, Photoshop.. experience with Nodejs, Express, Mongodb. Javascript still difficult. 
+
+#### JShilling4 [Github](https://github.com/JShilling4)
+— **skills:** HTML, CSS, JS, Python, PHP, React, SQL, a little design. (Can help anywhere needed)
