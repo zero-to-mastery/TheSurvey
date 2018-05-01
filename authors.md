@@ -69,7 +69,7 @@
 #### Weed [Github](https://github.com/Wistree)
 — **skills:** HTML, CSS, JS, Python, I also know statistic, SPSS, and a little bit of datascience (analyzing, visualizing)
 
-###Thomas [Github](https://github.com/thomasdreyer)
+#### Thomas [Github](https://github.com/thomasdreyer)
 — **skills:** HTML, CSS, JS, PHP, React, Angular, Ionic, Laravel, NodeJS, ExpressJS, Apache2, mySQL, PostgreSQL, SQLlite, MongDB
 
 #### JoshF [Github](https://github.com/jef88)
