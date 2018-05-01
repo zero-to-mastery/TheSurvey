@@ -74,3 +74,6 @@
 
 #### JoshF [Github](https://github.com/jef88)
 — **skills:** Java, JS, NodeJS, PostgreSQL, MongoDB, some HTML and CSS, Design
+
+#### Daenz [Github] (https://github.com/Daenza)
+-**skills:**HTML, CSS, Bootstrap4, Photoshop.. experience with Nodejs, Express, Mongodb. Javascript still difficult. 
