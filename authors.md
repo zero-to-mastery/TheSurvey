@@ -26,7 +26,7 @@
 — **skills:** HTML, CSS, JS, React, Python
 
 
-#### Abdus
+#### Abdus [Github](https://github.com/thisisabdus)
 — **skills:** HTML, CSS, JS, NodeJS, MongoDB
 
 
@@ -49,10 +49,10 @@
 — **skills:** HTML, CSS, JS, React, Node, Database
 
 #### Panconpeenga [Github](https://github.com/Panconpeenga)
-- **skills:** HTML, CSS, JS
+— **skills:** HTML, CSS, JS
 
 ### esslushy
-- **skills:** HTML, CSS, JS, some Node, can learn any language relatively quickly if needed.
+— **skills:** HTML, CSS, JS, some Node, can learn any language relatively quickly if needed.
 
 #### delux [Github](https://github.com/deluxscript)
 — **skills:** HTML, CSS, JS, ReactJS, NodeJS, ExpressJS, PHP, Firebase, Little knowledge with MongDB
@@ -63,5 +63,14 @@
 #### Andrew A.
 — **skills:** Some knowledge of HTML & CSS. Willing to help in any area needed.
 
+#### r4pt0s [Github](https://github.com/r4pt0s)
+— **skills:** HTML, CSS, Javascript, NodeJs, ExpressJs, PHP, Relational Databases, SQL, Gimp, Inkscape, Bootstrap
+
+#### Weed [Github](https://github.com/Wistree)
+— **skills:** HTML, CSS, JS, Python, I also know statistic, SPSS, and a little bit of datascience (analyzing, visualizing)
+
+###Thomas [Github](https://github.com/thomasdreyer)
+— **skills:** HTML, CSS, JS, PHP, React, Angular, Ionic, Laravel, NodeJS, ExpressJS, Apache2, mySQL, PostgreSQL, SQLlite, MongDB
+
 #### JoshF [Github](https://github.com/jef88)
-- **skills:** Java, JS, NodeJS, PostgreSQL, MongoDB, some HTML and CSS, Design
+— **skills:** Java, JS, NodeJS, PostgreSQL, MongoDB, some HTML and CSS, Design
