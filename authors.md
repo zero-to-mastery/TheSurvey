@@ -71,3 +71,6 @@
 
 ###Thomas [Github](https://github.com/thomasdreyer)
 — **skills:** HTML, CSS, JS, PHP, React, Angular, Ionic, Laravel, NodeJS, ExpressJS, Apache2, mySQL, PostgreSQL, SQLlite, MongDB
+
+#### JoshF [Github](https://github.com/jef88)
+— **skills:** Java, JS, NodeJS, PostgreSQL, MongoDB, some HTML and CSS, Design
