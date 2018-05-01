@@ -63,4 +63,5 @@
 #### Andrew A.
 — **skills:** Some knowledge of HTML & CSS. Willing to help in any area needed.
 
-
+#### JoshF [Github](https://github.com/jef88)
+- **skills:** Java, JS, NodeJS, PostgreSQL, MongoDB, some HTML and CSS, Design
