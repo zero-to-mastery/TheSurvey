@@ -63,5 +63,8 @@
 #### Andrew A.
 — **skills:** Some knowledge of HTML & CSS. Willing to help in any area needed.
 
+#### r4pt0s [Github](https://github.com/r4pt0s)
+— **skills:** HTML, CSS, Javascript, NodeJs, ExpressJs, PHP, Relational Databases, SQL, Gimp, Inkscape, Bootstrap
+
 #### Weed [Github](https://github.com/Wistree)
 — **skills:** HTML, CSS, JS, Python, I also know statistic, SPSS, and a little bit of datascience (analyzing, visualizing)
