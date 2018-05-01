@@ -63,4 +63,5 @@
 #### Andrew A.
 — **skills:** Some knowledge of HTML & CSS. Willing to help in any area needed.
 
-
+#### Weed [Github](https://github.com/Wistree)
+— **skills:** HTML, CSS, JS, Python, I also know statistic, SPSS, and a little bit of datascience (analyzing, visualizing)
