@@ -26,7 +26,7 @@
 — **skills:** HTML, CSS, JS, React, Python
 
 
-#### Abdus
+#### Abdus [Github](https://github.com/thisisabdus)
 — **skills:** HTML, CSS, JS, NodeJS, MongoDB
 
 
@@ -49,10 +49,10 @@
 — **skills:** HTML, CSS, JS, React, Node, Database
 
 #### Panconpeenga [Github](https://github.com/Panconpeenga)
-- **skills:** HTML, CSS, JS
+— **skills:** HTML, CSS, JS
 
 ### esslushy
-- **skills:** HTML, CSS, JS, some Node, can learn any language relatively quickly if needed.
+— **skills:** HTML, CSS, JS, some Node, can learn any language relatively quickly if needed.
 
 #### delux [Github](https://github.com/deluxscript)
 — **skills:** HTML, CSS, JS, ReactJS, NodeJS, ExpressJS, PHP, Firebase, Little knowledge with MongDB
