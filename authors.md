@@ -45,7 +45,7 @@
 #### blbns [Github](https://github.com/balabis)
 — **skills:** CSS, JS, ReactJS, NodeJS, ExpressJS, PostgreSQL, Photoshop.
 
-#### JustinTime42
+#### JustinTime42 [Github](https://github.com/JustinTime42)
 — **skills:** HTML, CSS, JS, React, Node, Database
 
 #### Panconpeenga [Github](https://github.com/Panconpeenga)
