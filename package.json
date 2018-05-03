@@ -1,0 +1,24 @@
+{
+  "name": "theveryspecialproject",
+  "version": "1.0.0",
+  "description": "This is our very special project, to create a zero to mastery developer survey web app. :)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jef88/TheVerySpecialProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zero-to-mastery/TheVerySpecialProject/issues"
+  },
+  "homepage": "https://github.com/zero-to-mastery/TheVerySpecialProject#readme",
+  "dependencies": {
+    "mongoose": "^5.0.17",
+    "validator": "^10.0.0"
+  }
+}
