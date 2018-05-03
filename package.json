@@ -19,7 +19,8 @@
   "homepage": "https://github.com/sdeagh/TheVerySpecialProject#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.4"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"
