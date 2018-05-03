@@ -86,3 +86,6 @@
 
 #### juanx [Github](https://github.com/juanhurtado4)
 — **skills:** HTML, CSS, JS, Python, React, NodeJS, ExpressJS
+
+#### cholo5ntrol [Github](https://github.com/cholo5ntrol)
+— **skills:** HTML, CSS, JS (shaky) and design.
