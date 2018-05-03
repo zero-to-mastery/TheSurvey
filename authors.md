@@ -92,3 +92,7 @@
 
 #### kneitukas [Github](https://github.com/kneitukas)
 — **skills:** HTML, CSS, JS (begginer)
+
+#### RDMammad [Github](https://github.com/rdmammad)
+— **skills:** HTML, CSS (just started the courese, in the learning process)
+
