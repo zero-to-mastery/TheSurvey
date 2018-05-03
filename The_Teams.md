@@ -1,7 +1,7 @@
 ## --Backend:    
 ###### ----Manager: JustinTime42    
 ----Team1: Thomas, juanx, delux, JustinTime42.    
-----Team2: Daenz, esslushy, JoshF, r4pt0s.    
+----Team2: Daenz, esslushy, JoshF, r4pt0s, sdeagh.    
 
 ## --Database:    
 ###### ----Manager: Jagh    
