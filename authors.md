@@ -76,10 +76,19 @@
 — **skills:** Java, JS, NodeJS, PostgreSQL, MongoDB, some HTML and CSS, Design
 
 #### Daenz [Github] (https://github.com/Daenza)
--**skills:**HTML, CSS, Bootstrap4, Photoshop.. experience with Nodejs, Express, Mongodb. Javascript still difficult. 
+-**skills:**HTML, CSS, Bootstrap4, Photoshop.. experience with Nodejs, Express, Mongodb. Javascript still difficult.
 
 #### JShilling4 [Github](https://github.com/JShilling4)
 — **skills:** HTML, CSS, JS, Python, PHP, React, SQL, a little design. (Can help anywhere needed)
 
 #### EricC [Github](https://github.com/erampion)
 — **skills:** HTML??, CSS?? (Looking to learn, and see what I can do to help)
+
+#### juanx [Github](https://github.com/juanhurtado4)
+— **skills:** HTML, CSS, JS, Python, React, NodeJS, ExpressJS
+
+#### cholo5ntrol [Github](https://github.com/cholo5ntrol)
+— **skills:** HTML, CSS, JS (shaky) and design.
+
+#### RDMammad [Github](https://github.com/rdmammad)
+— **skills:** HTML, CSS (just started the courese, in the learning process)

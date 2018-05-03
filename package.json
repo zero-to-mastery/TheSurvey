@@ -4,14 +4,14 @@
   "description": "This is our very special project, to create a zero to mastery developer survey web app. :)",
   "main": "index.js",
   "scripts": {
-    "start": "node app/app.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jef88/TheVerySpecialProject.git"
+    "url": "git+https://github.com/zero-to-mastery/TheVerySpecialProject.git"
   },
-  "author": "",
+  "author": "Zero To Mastery",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/zero-to-mastery/TheVerySpecialProject/issues"
@@ -19,6 +19,10 @@
   "homepage": "https://github.com/zero-to-mastery/TheVerySpecialProject#readme",
   "dependencies": {
     "mongoose": "^5.0.17",
-    "validator": "^10.0.0"
+    "validator": "^10.0.0",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
   }
 }
