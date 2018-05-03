@@ -6,4 +6,4 @@ let resultSchema = Schema({
 });
 
 let Result = mongoose.model('Result', resultSchema);
-module.exports = {Question};
+module.exports = {Result};
