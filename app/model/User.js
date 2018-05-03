@@ -15,6 +15,7 @@ let userSchema = Schema({
 		}
 	},
 	password: {type: String, require: true, minlength: 6},
+	//too be used for authenication/security
 	tokens: [{
 		access: {type: String, required: true},
 		token: {type: String, required: true}
