@@ -4,11 +4,8 @@ This is our very special project, to create a zero to mastery developer survey w
 # Very Important:    
 ##### Only Make Pull Requests To The 'development' Branch !!!     
 ##### Pull Requests To Any Other Branches Will Be Rejected.    
-    
-    
-    
-## For Documentation, Please Checkout The Wiki.
+##### For Documentation, Please Checkout The Wiki.
 
-## Available Features:
+# Available Features:
 
-## Features To Be Implemented:
+# Features To Be Implemented:
