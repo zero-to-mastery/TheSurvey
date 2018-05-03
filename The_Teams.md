@@ -14,5 +14,5 @@
 
 ## --Frontend:    
 ###### ----Manager: Matt    
-----Team 6: NullCherry, Panconpeenga, Andrew A.    
+----Team 6: NullCherry, Panconpeenga, Andrew A, VV.    
 ----Team 7:  EricC, RDMammad, kneitukas.    
