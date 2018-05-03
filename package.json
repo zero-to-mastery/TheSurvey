@@ -1,7 +1,7 @@
 {
   "name": "theveryspecialproject",
   "version": "1.0.0",
-  "description": "The Very Special Project",
+  "description": "This is our very special project, to create a zero to mastery developer survey web app. :)",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
@@ -16,8 +16,10 @@
   "bugs": {
     "url": "https://github.com/zero-to-mastery/TheVerySpecialProject/issues"
   },
-  "homepage": "https://github.com/sdeagh/TheVerySpecialProject#readme",
+  "homepage": "https://github.com/zero-to-mastery/TheVerySpecialProject#readme",
   "dependencies": {
+    "mongoose": "^5.0.17",
+    "validator": "^10.0.0",
     "express": "^4.16.3"
   },
   "devDependencies": {
