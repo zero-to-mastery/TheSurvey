@@ -89,3 +89,6 @@
 
 #### cholo5ntrol [Github](https://github.com/cholo5ntrol)
 — **skills:** HTML, CSS, JS (shaky) and design.
+
+#### RDMammad [Github](https://github.com/rdmammad)
+— **skills:** HTML, CSS (just started the courese, in the learning process)
