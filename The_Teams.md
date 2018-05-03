@@ -10,4 +10,4 @@
 ----Team5: cholo5ntrol, VV, JShilling4.    
 
 ## --Frontend:    
-----Team 6: NullCherry, Panconpeenga, Andrew A, EricC.    
+----Team 6: NullCherry, Panconpeenga, Andrew A, EricC, RDMammad.    
