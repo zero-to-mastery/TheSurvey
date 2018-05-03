@@ -89,3 +89,6 @@
 
 #### cholo5ntrol [Github](https://github.com/cholo5ntrol)
 — **skills:** HTML, CSS, JS (shaky) and design.
+
+#### kneitukas [Github](https://github.com/kneitukas)
+— **skills:** HTML, CSS, JS (begginer)
