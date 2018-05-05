@@ -5,37 +5,43 @@ const chai = require("chai");
 const user = require("./User");
 
 describe("user schema test", function() {
+    this.slow(0);
     //return;
-    it ("should be ok", function(done1) {
-        chai.expect(true).equals(true);
+    before(function(done) {
         user.User.deleteMany({}, function(err){
-            console.log(err);
-            done1()
-        })
-
-    });
-    it ("add user with a name to db and read it back", function(done2) {
-        chai.expect(true).equals(true);
-        let myUser = new user.User({name: "Pavel", email:"addr@mail.com", password: "password123"});
-        let saveRes = myUser.save(function(err, theUser) {
-            if (err){ console.error(err);
-                return;
+            if (err){
+                console.log(err);
+                done()
             }
-            console.log(`${theUser.name} save finished`);
-            user.User.find({name: /^Pav/}, function(err, users) {
-                if (err){
-                    console.error(err);
-                    return;
-                }
-                console.log(users);
-                done2();
-            })
-
-        });
-        after(function(done2){
-          console.log(saveRes)
-          mongoose.disconnect(done2);
+            done()
         });
     });
 
+    it ("add user with a name to db", function(done) {
+        let myUser = new user.User({name: "Pavel", email:"addr@mail.com", password: "password123"});
+
+        myUser.save().then(function(theUser){
+            console.log(`${theUser.name} save finished`);
+            assert(myUser.isNew === false);
+            done();
+        }).catch(function(err){
+            console.error(err);
+            done();
+        });
+    });
+
+    it ("read user from db", function(done) {
+        user.User.find({name: /^Pav/}).then(function(users){
+            console.log(users);
+            assert(users[0].name === "Pavel");
+            done();
+        }).catch(function(err) {
+            console.error(err);
+            done();
+        });
+    });
+
+    after(function(done){
+      mongoose.disconnect(done);
+    });
 });
