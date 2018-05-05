@@ -10,9 +10,9 @@
 ## --Design:    
 ###### ----Manager: kern    
 ----Team4: Divyateja, kern, Matt, leinka.    
-----Team5: cholo5ntrol, VV, JShilling4.    
+----Team5: cholo5ntrol, VV, JShilling4, Jess.    
 
 ## --Frontend:    
 ###### ----Manager: Matt    
-----Team 6: NullCherry, Panconpeenga, Andrew A, VV.    
+----Team 6: NullCherry, Panconpeenga, Andrew A, VV, Jess.    
 ----Team 7:  EricC, RDMammad, kneitukas, juanx, Weed.    
