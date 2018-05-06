@@ -1,0 +1,4 @@
+{
+  "dbUri": "mongodb://localhost/survey_app",
+  "jwtSecret": "This is the very secret passphrase required to create a JSON web token!!!"
+}
