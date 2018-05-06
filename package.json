@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha **/*.spec.js",
+    "test-debug": "npx mocha --inspect-brk **/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,8 @@
     "validator": "^10.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.17.3"
+    "chai": "^4.1.2",
+    "nodemon": "^1.17.3",
+    "mocha": "^5.1.1"
   }
 }

@@ -1,7 +1,7 @@
 ## --Backend:    
 ###### ----Manager: JustinTime42    
-----Team1: Thomas, juanx, delux, JustinTime42.    
-----Team2: Daenz, esslushy, JoshF, r4pt0s, sdeagh.    
+----Team1: Thomas, delux, JustinTime42, esslushy,.    
+----Team2: Daenz, JoshF, r4pt0s, sdeagh.    
 
 ## --Database:    
 ###### ----Manager: Jagh    
@@ -10,9 +10,9 @@
 ## --Design:    
 ###### ----Manager: kern    
 ----Team4: Divyateja, kern, Matt, leinka.    
-----Team5: cholo5ntrol, VV, JShilling4.    
+----Team5: cholo5ntrol, VV, JShilling4, Jess.    
 
 ## --Frontend:    
 ###### ----Manager: Matt    
-----Team 6: NullCherry, Panconpeenga, Andrew A.    
-----Team 7:  EricC, RDMammad, kneitukas.    
+----Team 6: NullCherry, Panconpeenga, Andrew A, VV, Jess.    
+----Team 7:  EricC, RDMammad, kneitukas, juanx, Weed.    
