@@ -17,26 +17,74 @@ describe("user schema test", function() {
         });
     });
 
-    it ("add user with a name to db", function(done) {
+    it ("add user with a name to db and read it back", function(done) {
         let myUser = new user.User({name: "Pavel", email:"addr@mail.com", password: "password123"});
 
         myUser.save().then(function(theUser){
+            console.log(myUser);
             console.log(`${theUser.name} save finished`);
-            assert(myUser.isNew === false);
-            done();
+        }).then(function(){
+            user.User.find({_id: myUser._id}).then(function(users){
+                console.log(users);
+                assert(users[0]._id.toString === myUser._id.toString);
+                done();
+            }).catch(function(err) {
+                console.error(err);
+            });
+        });
+    });
+
+    it ("do not allow duplicate email", function(done) {
+        let myUser = new user.User({name: "George", email:"addr@mail.com", password: "password456"});
+        myUser.save().then(function(theUser){
+            console.log(`${theUser.name} save finished`);
         }).catch(function(err){
             console.error(err);
+            assert(myUser.isNew === true);
             done();
         });
     });
 
-    it ("read user from db", function(done) {
-        user.User.find({name: /^Pav/}).then(function(users){
-            console.log(users);
-            assert(users[0].name === "Pavel");
-            done();
-        }).catch(function(err) {
+    it ("require email", function(done) {
+        let myUser = new user.User({name: "George", password: "password456"});
+        myUser.save().then(function(theUser){
+            console.log(`${theUser.name} save finished`);
+        }).catch(function(err){
             console.error(err);
+            assert(myUser.isNew === true);
+            done();
+        });
+    });
+
+    it ("must be valid email", function(done) {
+        let myUser = new user.User({name: "George", email:"addrmail.com", password: "password456"});
+        myUser.save().then(function(theUser){
+            console.log(`${theUser.name} save finished`);
+        }).catch(function(err){
+            console.error(err);
+            assert(myUser.isNew === true);
+            done();
+        });
+    });
+
+    it ("require password", function(done) {
+        let myUser = new user.User({name: "George", email:"add@mail.com" });
+        myUser.save().then(function(theUser){
+            console.log(`${theUser.name} save finished`);
+        }).catch(function(err){
+            console.error(err);
+            assert(myUser.isNew === true);
+            done();
+        });
+    });
+
+    it ("password must be atleast 6 char long", function(done) {
+        let myUser = new user.User({name: "George", email:"add@mail.com", password: "pass"});
+        myUser.save().then(function(theUser){
+            console.log(`${theUser.name} save finished`);
+        }).catch(function(err){
+            console.error(err);
+            assert(myUser.isNew === true);
             done();
         });
     });

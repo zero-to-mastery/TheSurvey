@@ -14,7 +14,7 @@ let userSchema = Schema({
 			message: '{VALUE} is not a valid email.'
 		}
 	},
-	password: {type: String, require: true, minlength: 6},
+	password: {type: String, required: true, minlength: 6},
 	//too be used for authenication/security
 	tokens: [{
 		access: {type: String, required: true},
