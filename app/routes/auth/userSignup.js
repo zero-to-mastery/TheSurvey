@@ -3,6 +3,7 @@
 
 const validator = require('validator');
 const User = require('../../models/User');
+const bcrypt = require('bcrypt');
 
 // check payload received from front end has valid inputs
 // valid inputs expected are:
@@ -17,6 +18,11 @@ const validateSignupForm = (payload) => {
     const errors = {}
     let isFormValid = true
     let message = ""
+
+    if (!payload || typeof payload.username !== 'string') {
+        isFormValid = false;
+        errors.email = 'Please provide a valid username.';
+    }
 
     if (!payload || typeof payload.email !== 'string' || !validator.isEmail(payload.email)) {
         isFormValid = false;
@@ -36,6 +42,19 @@ const validateSignupForm = (payload) => {
     }
 }
 
+const generateHash = (password) => {
+    const saltRounds = 10;
+    return new Promise((resolve, reject) => {
+        bcrypt.hash(password, saltRounds)
+            .then(hash => {
+                resolve(hash)
+            })
+            .catch(err =>{
+                reject(err)
+            })
+    })
+ }
+
 module.exports = (req, res) => {
     // Check the form body passes the validation tests
     const validationResult = validateSignupForm(req.body)
@@ -43,22 +62,27 @@ module.exports = (req, res) => {
     if (!validationResult.success) {
         return res.status(400).json(validationResult);
     }
-    // we're looking good, create a new user in the db
-    console.log('about to create user....')
-    User.create(
-        {
-            name: 'Me',
-            email: req.body.email,
-            passowrd: req.body.password
-        })
-        .then(data => {
-            console.log(data)
-            return res.status(200).json({ message: "Success, user saved", data })
+    
+    // Hash the plain text password
+    generateHash(req.body.password)
+        .then(hash => {
+            User.create(
+                {
+                    name: req.body.username,
+                    email: req.body.email,
+                    password: hash
+                })
+                .then(user => {
+                    return res.status(200).json({ message: "Success, user saved.", user })
+                })
+                .catch(err => {
+                    console.log(err)
+                    return res.status(400).json({ message: "An error occured creating the user.", err })
+                })
         })
         .catch(err => {
-            console.log("Error creating user")
-            return res.status(400).json({ message: "An error occured creating the user", err })
+            console.log(err)
+            return res.status(400).json({ message: "An error occurred generating the password hash", err})
         })
-    
 };
 

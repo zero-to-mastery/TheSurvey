@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
 const Schema = mongoose.Schema;
+const bcrypt = require('bcrypt');
 
 let userSchema = Schema({
 	name: String,
@@ -14,7 +15,7 @@ let userSchema = Schema({
 			message: '{VALUE} is not a valid email.'
 		}
 	},
-	password: {type: String, require: true, minlength: 6},
+	password: {type: String, required: true, minlength: 6},
 	//too be used for authenication/security
 	tokens: [{
 		access: {type: String, required: true},
@@ -22,6 +23,5 @@ let userSchema = Schema({
 	}],
 	surveys: [{type: Schema.Types.ObjectId, ref: 'Survey'}]
 });
-
-let User = mongoose.model('User', userSchema);
-module.exports = User;
+  
+module.exports = mongoose.model('User', userSchema);
