@@ -2,7 +2,7 @@
 // The user data (minus password/hash) will need to be returned
 
 const validator = require('validator');
-const User = require('../../models/User');
+const User = require('../../model/User');
 const bcrypt = require('bcrypt');
 
 // check payload received from front end has valid inputs
