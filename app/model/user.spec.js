@@ -1,16 +1,17 @@
-require("../db/mongoose");
+//require("../db/mongoose");
 const mongoose = require("mongoose");
 const {expect} = require("chai");
 const {MongoError} = require("mongodb");
 const User = require("./User");
+// Always connect to local db while testing
+require("./index").connect("mongodb://localhost:27017/survey_app")
 
 describe("user schema test", function() {
     this.slow(0);
     this.timeout(10000);
-    //return;
 
-    // Why beforeEach()?
-    // So that each of the 
+    // beforeEach() => so that all tests are as independent from each other as possible,
+    // we do a bit of a cleanup
     beforeEach(function(done) {
         User.deleteMany({}, function(err){
             if (err){
