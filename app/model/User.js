@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
 const Schema = mongoose.Schema;
+const bcrypt = require('bcrypt');
 
 let userSchema = Schema({
 	name: String,
@@ -22,6 +23,5 @@ let userSchema = Schema({
 	}],
 	surveys: [{type: Schema.Types.ObjectId, ref: 'Survey'}]
 });
-
-let User = mongoose.model('User', userSchema);
-module.exports = {User};
+  
+module.exports = mongoose.model('User', userSchema);

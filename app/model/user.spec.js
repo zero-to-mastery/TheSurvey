@@ -2,7 +2,7 @@ require("../db/mongoose");
 const mongoose = require("mongoose");
 const {expect} = require("chai");
 const {MongoError} = require("mongodb");
-const user = require("./User");
+const User = require("./User");
 
 describe("user schema test", function() {
     this.slow(0);
@@ -12,7 +12,7 @@ describe("user schema test", function() {
     // Why beforeEach()?
     // So that each of the 
     beforeEach(function(done) {
-        user.User.deleteMany({}, function(err){
+        User.deleteMany({}, function(err){
             if (err){
                 done();
                 return;
@@ -22,16 +22,16 @@ describe("user schema test", function() {
     });
 
     it ("add user with a name to db and read it back", async function() {
-        let myUser = new user.User({name: "Pavel", email:"addr@mail.com", password: "password123"});
+        let myUser = new User({name: "Pavel", email:"addr@mail.com", password: "password123"});
         let savedUser = await myUser.save();
-        let foundUsers = await user.User.find({_id: myUser._id});
+        let foundUsers = await User.find({_id: myUser._id});
         expect(foundUsers).be.lengthOf(1);
         expect(foundUsers[0]._id.toString()).be.equal(myUser._id.toString());
     });
 
     it ("do not allow duplicate email", async function() {
-        let myUser = new user.User({name: "George", email:"addr@mail.com", password: "password456"});
-        let duplUser = new user.User({name: "Alex", email: "addr@mail.com", password: "qwerty1234"});
+        let myUser = new User({name: "George", email:"addr@mail.com", password: "password456"});
+        let duplUser = new User({name: "Alex", email: "addr@mail.com", password: "qwerty1234"});
         try {
             let myUserSaveResult = await myUser.save();
             let duplUserSaveResult = await duplUser.save();
@@ -44,7 +44,7 @@ describe("user schema test", function() {
     });
 
     it ("require email", function(done) {
-        let myUser = new user.User({name: "George", password: "password456"});
+        let myUser = new User({name: "George", password: "password456"});
         myUser.save().then(function(theUser){
             expect(true, "Execution shouldn't reach this point, exception 'No email provided' expected").to.false();
         }).catch(function(err){
@@ -59,7 +59,7 @@ describe("user schema test", function() {
     });
 
     it ("must be valid email", function(done) {
-        let myUser = new user.User({name: "George", email:"addrmail.com", password: "password456"});
+        let myUser = new User({name: "George", email:"addrmail.com", password: "password456"});
         myUser.save().then(function(theUser){
             //console.log(`${theUser.name} save finished`);
             expect(true, "Execution shouldn't reach this point, exception 'Email validation error' expected").to.false();
@@ -74,7 +74,7 @@ describe("user schema test", function() {
     });
 
     it ("require password", function(done) {
-        let myUser = new user.User({name: "George", email:"add@mail.com" });
+        let myUser = new User({name: "George", email:"add@mail.com" });
         myUser.save().then(function(theUser){
             //console.log(`${theUser.name} save finished`);
             expect(true, "Execution shouldn't reach this point, exception 'No pasword provided' expected").to.false();
@@ -89,7 +89,7 @@ describe("user schema test", function() {
     });
 
     it ("password must be atleast 6 char long", function(done) {
-        let myUser = new user.User({name: "George", email:"add@mail.com", password: "pass"});
+        let myUser = new User({name: "George", email:"add@mail.com", password: "pass"});
         myUser.save().then(function(theUser){
             //console.log(`${theUser.name} save finished`);
             expect(true, "Execution shouldn't reach this point, exception 'password length too small' expected").to.false();
