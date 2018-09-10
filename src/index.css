@@ -1,7 +1,69 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* it converts to font-size: 10px */
+}
+
 body {
   margin: 0;
   padding: 0;
-	font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem; /* 1rem = 10px; 1.4rem = 14px */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1 {
+  font-size: 4.32rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 3.36rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2.19rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.92rem;
+  line-height: 1.44rem;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 1.62rem;
+  line-height: 1.68rem;
+}
+
+h6 {
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5em;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  margin-bottom: 5px;
 }
