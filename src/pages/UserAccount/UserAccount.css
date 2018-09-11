@@ -1,8 +1,61 @@
 .user-account {
-  width: 100%;
-  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.user-account__heading {
+  font-size: 1.6rem;
+  margin: 3rem auto;
+}
+
+.user-account__container {
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  background-color: #fff;
+  display: inline-block;
+  margin: 16px;
+  width: 390px;
+}
+
+.user-account__head {
+  height: 96px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightblue;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.user-account__header {
+  margin-left: 1rem;
+  color: rgba(0,0,0,0.65);
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.user-account__input-div {
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.user-account__name {
+  font-size: 1.7rem;
+}
+
+.user-account__input-svg {
+  margin-right: 1rem;
+}
+
+.user-account__user {
+  display: inline-block;
+  width: 17rem;
+  margin: 0 auto;
+}
+
+.user-account__change {
+}
+
+.user-account__svg {
+  fill: rgba(0,0,0,0.65);
 }
