@@ -15,8 +15,7 @@
         `MONGO_DB=mongodb://localhost:27017/the_survey
          PORT=3005`
        in order for this to work :)
-
-then just run npm run server normally
+    - Then run the command `npm run`
 
 - ### Front-End 
     - In the root directory of the project:
