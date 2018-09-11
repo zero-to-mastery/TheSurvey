@@ -22,4 +22,4 @@ yarn-error.log*
 
 .env
 
-./idea
+/.idea
