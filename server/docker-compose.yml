@@ -1,0 +1,17 @@
+version: '3.6'
+
+services:
+  backend:
+    container_name: backend
+    build: .
+    ports:
+      - '3005:3005'
+    links:
+      - mongo
+    volumes:
+      - ./:/usr/src/api
+  mongo:
+    container_name: mongodb
+    image: mongo
+    ports:
+      - '27017:27017'

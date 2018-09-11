@@ -1,0 +1,6 @@
+{"level":"info","message":"Listening on port 4000...","timestamp":"2018-09-11T15:54:14.627Z"}
+{"level":"info","message":"Listening on port 4000...","timestamp":"2018-09-11T16:12:03.048Z"}
+{"level":"info","message":"Connected to mongodb://mongo:27017/the_survey...","timestamp":"2018-09-11T16:12:03.077Z"}
+{"level":"info","message":"Listening on port 3005...","timestamp":"2018-09-11T16:15:54.938Z"}
+{"level":"info","message":"Connected to mongodb://mongo:27017/the_survey...","timestamp":"2018-09-11T16:15:54.967Z"}
+{"level":"info","message":"Listening on port 3005...","timestamp":"2018-09-11T16:17:20.760Z"}
