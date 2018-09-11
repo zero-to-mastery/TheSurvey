@@ -1,21 +1,18 @@
-const express = require('express')
-const app = express()
+const winston = require('winston');
+const morgan = require('morgan');
+const express = require('express');
+const app = express();
+require('dotenv').config();
 
-const user = require('./routes/user')
-const auth = require('./routes/auth')
+require('./startup/logging')();
+require('./startup/routes')(app);
+require('./startup/db')();
 
-app.get('/', (req, res) => {
-  res.json({ msg: 'I did it mom!' })
-})
 
-// ? This will make express use specific routes.
-// * All routes to the api must use "/api/routename"
+app.use(express.urlencoded({extended: true}));
+app.use(morgan('combined'));
 
-// * For authentication related routes (login, register)
-app.use('/api/auth', auth)
+const PORT = process.env.PORT || 3005;
+const server = app.listen(PORT, () => winston.info(`Listening on port ${PORT}...`));
 
-// * For other user specific routes (profile, user settings, etc...)
-app.use('/api/user', user)
-
-const PORT = process.env.PORT || 4000
-app.listen(PORT, () => console.log(`Listening to port ${PORT} and it rocks!`))
+module.exports = server;
