@@ -10,6 +10,12 @@
 - ### Back-End
     - Change directory to _sever/_ `cd server/`
     - Install NPM dependencies `npm install`
+    - You will need to create a .env fiel and put
+        `MONGO_DB=mongodb://localhost:27017/the_survey
+         PORT=3005`
+       in order for this to work :)
+
+then just run npm run server normally
 - ### Front-End 
     - Change directory to _client/_ `cd client/`
     - Install NPM dependencies `npm install`
