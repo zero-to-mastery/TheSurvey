@@ -1,0 +1,17 @@
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 0.15vw 0.1vw rgba(0, 0, 0, 0.05);
+}
+
+.contentAndTitles {
+  width: 100%;
+  overflow: hidden;
+}
+
+.surveysTitle {
+  font-size: 1.5vw;
+  margin: 3vw 2vw;
+}
