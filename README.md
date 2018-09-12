@@ -2,6 +2,10 @@
 
 ### This is our very special project, to create a zero to mastery developer survey web app by the community for the community.
 
+The Zero To Mastery Survey Web App will collect numorous feedback from the entire Zero To Mastery Dev Community and incorporate those changes/suggestions to improve this awesome course.
+
+Currently in BETA - https://zero-to-mastery.github.io/TheSurvey/
+
 ## Contribute
 - Fork this repository
 - Clone forked repository using `git clone <forked_repo_url>`
