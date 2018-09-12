@@ -20,7 +20,7 @@
 - ### Front-End 
     - In the root directory of the project:
     - Install NPM dependencies `npm install`
-    - Then run the command `npm start`
+    - Then run the command `npm run`
 
 ## Important Notes
 - Always make PR in **development** branch and **NOT** in **master** branch.
