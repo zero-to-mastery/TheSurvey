@@ -1,0 +1,87 @@
+.account {
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.account__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.account__content {
+  margin: 2rem;
+  width: 39rem;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2)
+}
+
+.account__header {
+  padding: 2rem;
+  height: 9.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.account__header--heading {
+  margin-left: 1rem;
+  font-weight: 400;
+  color: inherit;
+  font-size: 2rem;
+}
+
+.account__name {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 3rem;
+  color: rgba(0,0,0,.5);
+}
+
+.account__username {
+  color: rgba(0,0,0,.7);
+}
+
+.account__input-div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.account__info {
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  padding: 2rem;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.account__info--edit {
+  display: flex;
+  justify-content: center;
+}
+
+.account__edit-button {
+  padding: 1rem 3rem;
+  border-radius: 3px;
+  border: none;
+  font-size: 1.3rem;
+  background-color: #4185f4;
+  transition: all .2s ease-out;
+}
+
+.account__edit-button:hover {
+  transform: translateY(-2px);
+}
+
+.account__edit-button:active {
+  transform: translateY(-1px);
+}
+
+.account__edit-button:focus {
+  outline: none;
+}
