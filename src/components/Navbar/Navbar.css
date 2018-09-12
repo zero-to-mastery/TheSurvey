@@ -1,0 +1,76 @@
+/* Styles of the navbar */
+
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 .15vw .1vw rgba(0, 0, 0, 0.05);
+  transition: top 0.3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoWithText {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logo {
+  width: 4vw;
+  padding-left: 1vw;
+}
+
+.logo img {
+  max-width: 4vw;
+  max-height: 4vw;
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  font-size: 2vw;
+  letter-spacing: .15vw;
+  padding: 1vw .2vw;
+}
+
+.signup a {
+  font-size: 1.18vw;
+  letter-spacing: .18vw;
+  padding: .7vw;
+  margin-right: 1vw;
+  text-decoration: none;
+  color: #ffffff;
+  border: .1vw solid #7fbb00;
+  border-radius: .5vw;
+  background: #7fbb00;
+  transition: background .15s ease-in-out;
+}
+
+.signup a:hover {
+  background: #75a902;
+}
+
+/* Mobile Responsive Design */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .logoWithText {
+    margin: 0 auto;
+  }
+  .logo img {
+    max-width: 7vw;
+    max-height: 7vw;
+  }
+  .text {
+    font-size: 7vw;
+    letter-spacing: .2vw;
+  }
+}

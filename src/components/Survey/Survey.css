@@ -1,0 +1,108 @@
+/* This is the css file corresponding to pages with surveys listed */
+
+.surveyList {
+  padding: 1vw 2vw;
+  width: 100%;
+  height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.survey {
+  width: 93%;
+  box-shadow: 0 0.2vw 0.3vw 0 rgba(0, 0, 0, 0.05), 0 0.1vw 0.5vw 0 rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease-in-out;
+  padding: 1.5vw;
+  margin-bottom: 3.5vw;
+  transition: opacity 0.2s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.survey:hover {
+  box-shadow: 0 0.2vw 0.3vw 0 rgba(0, 0, 0, 0.08), 0 0.1vw 0.5vw 0 rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.surveyArtwork {
+  width: 6vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.surveyArtwork img {
+  max-width: 6vw;
+  max-height: 6vw;
+  width: 100%;
+  height: 100%;
+}
+
+.surveyTitle {
+  margin: 1.5vw 0;
+  margin-top: 0;
+}
+
+.surveyTitle span {
+  font-size: 1.25vw;
+  color: #000000;
+  margin: 1vw;
+  transition: 0.2s color ease-in-out;
+}
+
+.surveyTitle span:hover {
+  color: #7fbb00;
+  text-decoration: underline;
+}
+
+.surveyDescription span {
+  font-size: 0.9vw;
+  margin: 1vw;
+}
+
+/* Animations Used On The Webpage */
+
+.zoomInOut {
+  animation: zoominout 0.3s forwards;
+}
+
+@keyframes zoominout {
+  0% {
+    transform: scale(0.95);
+  }
+  10% {
+    transform: scale(0.955);
+  }
+  20% {
+    transform: scale(0.96);
+  }
+  30% {
+    transform: scale(0.965);
+  }
+  40% {
+    transform: scale(0.97);
+  }
+  50% {
+    transform: scale(0.975);
+  }
+  60% {
+    transform: scale(0.98);
+  }
+  70% {
+    transform: scale(0.985);
+  }
+  80% {
+    transform: scale(0.99);
+  }
+  90% {
+    transform: scale(0.995);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.transparent {
+  opacity: 0;
+}

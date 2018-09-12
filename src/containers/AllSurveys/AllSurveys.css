@@ -1,53 +1,17 @@
-
-.card {
-    width: 50%;
-    height: 150px;
-    background: rgb(241, 241, 241);
-    margin: 20px;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .1);
-    border-radius: 7px;
-    display: grid;
-    grid-template-columns: 20% 80%;
-    overflow: hidden;
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 0.15vw 0.1vw rgba(0, 0, 0, 0.05);
 }
 
-.cardImage {
-    background-color: rgb(134, 240, 113);
-    transition: transform 500ms;
+.contentAndTitles {
+  width: 100%;
+  overflow: hidden;
 }
 
-.cardImage:hover {
-    transform: scale(.9);
-}
-
-.cardContent {
-    margin: 0 20px;
-}
-
-.cardContent h1 {
-    transition: color .5s;
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.cardContent h1:before {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background-color: rgb(61, 196, 61);
-    margin-bottom: -5px;
-    transition: width 500ms;
-}
-
-.cardContent h1:hover {
-    color: rgb(61, 196, 61);
-}
-
-.cardContent h1:hover:before {
-    width: 100%;
+.surveysTitle {
+  font-size: 1.5vw;
+  margin: 3vw 2vw;
 }

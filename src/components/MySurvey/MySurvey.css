@@ -1,0 +1,27 @@
+/* This is the corresponding css file for the surveys in mySurveys.html */
+
+.surveyText {
+  position: relative;
+  width: 70%;
+}
+
+.surveyFunctions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  width: 2vw;
+  height: 2vw;
+  position: relative;
+  top: 2.7vw;
+  left: 15vw;
+}
+
+.surveyFunctions img {
+  max-width: 2vw;
+  max-height: 2vw;
+  width: 100%;
+  height: 100%;
+  margin: 0.7vw;
+  cursor: pointer;
+}
