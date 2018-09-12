@@ -1,15 +1,14 @@
 import React from 'react';
 import './UserAccount.css';
-import user from '../../assets/img/user.png';
-import settings from '../../assets/img/settings.png';
+import Svg from './svg';
 
 class UserAccount extends React.Component {
   state = {
     edit: false
   }
 
-  editChangeHandler = (state) => {
-    this.setState({edit: !state.edit})
+  editChangeHandler = () => {
+    this.setState({edit: !this.state.edit});
   }
   
   render () {
@@ -21,29 +20,41 @@ class UserAccount extends React.Component {
         <div className='account__container'>
           <div className='account__content'>
             <h2 className='account__header'>
-              <img src={user} alt='user' />
+              <Svg name='user' className='account__user-svg' height='60' />
               <span className='account__header--heading'>Personal Info</span>
+              <div style={{display: !this.state.edit ? 'block' : 'none'}} onClick={this.editChangeHandler} className='account__edit-button'>
+                <Svg className='account__edit-svg account__user-svg' name='edit' height='50' />
+              </div>
             </h2>
-            <div className='account__input-div'>
-              <span className='account__info'>Username: {this.props.name}</span>
-              <span className='account__info'>Email: {this.props.email}</span>
-              <span className='account__info account__info--edit'>
-                <button onClick={() => this.editChangeHandler(this.state)} className='account__edit-button'>Edit</button>
-              </span>
-            </div>
-          </div>
-          <div className='account__content'>
-            <h2 className='account__header'>
-              <img src={settings} alt='user' />
-              <span className='account__header--heading'>Manage Account</span>
-            </h2>
-            <div className='account__input-div'>
-              <span className='account__info'>Username: {this.props.name}</span>
-              <span className='account__info'>Email: {this.props.email}</span>
-              <span className='account__info account__info--edit'>
-                <button onClick={() => this.editChangeHandler(this.state)} className='account__edit-button'>Edit</button>
-              </span>
-            </div>
+            {
+              !this.state.edit ?
+              <div className='account__input-div'>
+                <span className='account__info'>
+                  <Svg name='user' className='account__info-svg' height='20' />
+                  Username: {this.props.name}
+                </span>
+                <span className='account__info'>
+                  <Svg name='envelope' className='account__info-svg' height='20' />
+                  Email: {this.props.email}
+                </span>
+              </div>
+              :
+              <div className='account__input-div'>
+                <div className='account__input-container'>
+                  <Svg name='user' className='account__info-svg' height='20' />
+                  <input className='account__input' type='text' placeholder={this.props.name} />
+                </div>
+                <div className='account__input-container'>
+                  <Svg name='lock' className='account__info-svg' height='20' />
+                  <input className='account__input' type='text' placeholder='your new password' />
+                </div>
+                <div className='account__input-container'>
+                  <Svg name='lock' className='account__info-svg' height='20' />
+                  <input className='account__input' type='text' placeholder='repeat your password' />
+                </div>
+                <button onClick={this.editChangeHandler} className='account__update-button'>Update</button>
+              </div>
+            }
           </div>
         </div>
       </div>

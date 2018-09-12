@@ -20,6 +20,10 @@
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2)
 }
 
+.account__user-svg {
+  fill: rgba(0,0,0,.6);
+}
+
 .account__header {
   padding: 2rem;
   height: 9.7rem;
@@ -27,6 +31,7 @@
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid rgba(0,0,0,.12);
+  position: relative;
 }
 
 .account__header--heading {
@@ -38,7 +43,7 @@
 
 .account__name {
   display: inline-block;
-  margin: 0 auto;
+  margin: 5rem auto;
   font-size: 3rem;
   color: rgba(0,0,0,.5);
 }
@@ -58,6 +63,13 @@
   padding: 2rem;
   font-size: 2rem;
   width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.account__info-svg {
+  fill: rgba(0,0,0,.6);
+  margin-right: 1rem;
 }
 
 .account__info--edit {
@@ -65,23 +77,71 @@
   justify-content: center;
 }
 
-.account__edit-button {
-  padding: 1rem 3rem;
-  border-radius: 3px;
+.account__update-button {
+  background-color: #4285f4;
+  padding: 1.34rem 3.42rem;
+  display: block;
   border: none;
-  font-size: 1.3rem;
-  background-color: #4185f4;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #fff;
   transition: all .2s ease-out;
+  margin: 2rem auto;
 }
 
-.account__edit-button:hover {
+.account__update-button:hover {
+  box-shadow: 0 7px 14px rgba(0,0,0,.2);
   transform: translateY(-2px);
 }
 
-.account__edit-button:active {
+.account__update-button:active {
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
   transform: translateY(-1px);
 }
 
-.account__edit-button:focus {
+.account__update-button:focus {
+  outline: none;
+}
+
+.account__edit-button {
+  position: absolute;
+  top: -1.3rem;
+  right: -1.3rem;
+}
+
+.account__edit-svg {
+  fill: #4285f4;
+  transition: all .3s ease-out;
+}
+
+.account__edit-svg:hover {
+  transform: scale(1.1);
+}
+
+.account__edit-svg:active {
+  transform: scale(1.05);
+}
+
+.account__input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.account__input {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0,.3);
+  font-size: 2rem;
+  color: rgba(0,0,0,.6);
+  padding: 1rem;
+}
+
+.account__input::placeholder {
+  color: rgba(0,0,0,.4);
+}
+
+.account__input:focus {
   outline: none;
 }
