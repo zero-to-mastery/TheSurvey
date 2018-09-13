@@ -11,7 +11,7 @@ const surveys = require('../routes/api/surveys');
 module.exports = function (app) {
     app.use(express.json());
     app.use('/api/user', user);
-    app.use('/surveys', surveys);
+    
     
     //Handlebars Middleware
     app.engine('handlebars', exphbs({defaultLayout: 'main'}));
@@ -31,4 +31,7 @@ module.exports = function (app) {
     app.get('/about', (req, res) => {
         res.render('about');
     });
+    
+    //Use surveys Router - this comes after middlewares
+    app.use('/surveys', surveys);
 };

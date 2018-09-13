@@ -6,8 +6,8 @@ const mongoose = require("mongoose");
 // router.get('/', (req, res) => res.json({msg: 'get all surveys'}))
 // router.get('/:surveyID', (req, res) => res.json({msg: `get specific survey (${req.params.surveyID})`}))
 // router.post('/', (req, res) => res.json({msg: 'post new survey'}))
-router.patch('/:surveyID', (req, res) => res.json({msg: `update existing survey (${req.params.surveyID})`}))
-router.delete('/:surveyID', (req, res) => res.json({msg: `delete existing survey (${req.params.surveyID})`}))
+// router.patch('/:surveyID', (req, res) => res.json({msg: `update existing survey (${req.params.surveyID})`}))
+// router.delete('/:surveyID', (req, res) => res.json({msg: `delete existing survey (${req.params.surveyID})`}))
 
 //Load Survey Model
     require('../../models/Surveys');
@@ -52,13 +52,17 @@ router.post('/', (req, res) => {
             title: req.body.title,
             question: req.body.question,
             answer: req.body.answer
-        }
+        };
         new Survey(newSurvey)
             .save() 
             .then(surveys => {
                 res.redirect('/surveys');
-            })
+            });
     }
+    
+    // console.log(req.body.title);
+    // console.log(req.body.question);
+    // res.send('ok');
 });
 
 module.exports = router;
