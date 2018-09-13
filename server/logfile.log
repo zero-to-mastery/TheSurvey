@@ -41,3 +41,133 @@
 {"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-11T16:58:15.230Z"}
 {"level":"info","message":"Listening on port 3005...","timestamp":"2018-09-11T16:59:18.797Z"}
 {"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-11T16:59:19.817Z"}
+<<<<<<< Updated upstream
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T11:27:03.894Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T11:27:03.943Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T11:32:28.305Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T11:32:28.353Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T11:33:22.268Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T11:33:22.312Z"}
+=======
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-12T16:53:57.310Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-12T16:54:50.711Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-12T16:54:50.753Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T08:45:54.504Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T08:46:32.190Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:14:55.501Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:14:55.548Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:16:56.900Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:16:56.942Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:19:19.412Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:19:19.455Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:37:05.919Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:37:05.965Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:47:02.571Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:47:02.619Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:55:35.601Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:55:35.652Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:57:45.387Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:57:45.431Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:59:14.820Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:59:14.875Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T10:09:37.730Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T10:09:37.774Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T10:33:59.848Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T10:33:59.893Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T10:43:26.672Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T10:43:26.715Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T11:02:59.541Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T11:02:59.586Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T11:24:13.024Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T11:24:13.067Z"}
+>>>>>>> Stashed changes
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T14:51:21.039Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T14:51:21.082Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T15:51:29.793Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T15:51:29.837Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T16:03:15.065Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T16:03:15.110Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T16:12:34.768Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T16:12:34.822Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T16:30:43.987Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T16:30:44.034Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T16:49:17.465Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T16:49:17.521Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T16:50:04.236Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T16:50:04.279Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T16:51:36.292Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T16:51:36.335Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T16:52:57.433Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T16:52:57.476Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T16:57:28.131Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T16:57:28.182Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T17:00:44.019Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T17:00:44.064Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T17:07:20.635Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T17:07:20.677Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T17:12:36.666Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T17:12:36.710Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T17:15:26.471Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T17:15:26.518Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T17:25:38.277Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T17:25:38.328Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T17:27:23.935Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T17:27:23.995Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T17:30:17.552Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T17:30:17.603Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T17:38:23.090Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T17:38:23.134Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T17:40:06.496Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T17:40:06.542Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T19:01:30.749Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T19:01:30.796Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T19:07:04.237Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T19:07:04.279Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T19:10:41.845Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T19:10:41.899Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T19:11:34.822Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T19:11:34.871Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T19:15:05.901Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T19:15:05.951Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T19:16:35.155Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T19:16:35.205Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T19:16:46.569Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T19:16:46.615Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T19:18:05.633Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T19:18:05.679Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T19:20:30.776Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T19:20:30.823Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T19:23:16.655Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T19:23:16.701Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T19:24:18.809Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T19:24:18.860Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T19:26:04.103Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T19:26:04.153Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T19:27:18.910Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T19:27:18.956Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T19:35:12.327Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T19:35:12.372Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T20:16:18.792Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T20:16:18.838Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T20:20:38.176Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T20:20:38.223Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T20:23:40.503Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T20:23:40.549Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T20:27:58.803Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T20:27:58.851Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T20:28:41.877Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T20:28:41.926Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T20:30:29.216Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T20:30:29.260Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T20:32:13.634Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T20:32:13.685Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T20:35:03.794Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T20:35:03.848Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T20:38:37.155Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T20:38:37.200Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T20:39:13.570Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T20:39:13.618Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T20:40:00.882Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T20:40:00.927Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T20:40:44.486Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T20:40:44.533Z"}

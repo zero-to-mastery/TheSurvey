@@ -1,0 +1,22 @@
+{{#each errors}}
+    <div class="alert alert-danger">{{text}}</div>
+{{/each}}
+
+<div class="card card-body">
+    <h3>New Survey</h3>
+    <form action="/surveys" method="POST">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" name="title"></input>
+        </div>
+        <div class="form-group">
+            <label for="question">Question</label>
+            <input type="text" class="form-control" name="question"></input>
+        </div>
+        <div class="form-group">
+            <label for="answer">Answers</label>
+            <textarea class="form-control" name="answer"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

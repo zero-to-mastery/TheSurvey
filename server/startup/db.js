@@ -4,6 +4,6 @@ const winston = require('winston');
 
 module.exports = function() {
     const db = process.env.MONGO_DB;
-    mongoose.connect(db)
+    mongoose.connect(db, {useNewUrlParser: true})
         .then(() => winston.info(`Connected to ${db}...`));
 };
