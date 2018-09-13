@@ -41,9 +41,43 @@
 {"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-11T16:58:15.230Z"}
 {"level":"info","message":"Listening on port 3005...","timestamp":"2018-09-11T16:59:18.797Z"}
 {"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-11T16:59:19.817Z"}
+<<<<<<< Updated upstream
 {"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T11:27:03.894Z"}
 {"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T11:27:03.943Z"}
 {"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T11:32:28.305Z"}
 {"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T11:32:28.353Z"}
 {"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T11:33:22.268Z"}
 {"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T11:33:22.312Z"}
+=======
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-12T16:53:57.310Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-12T16:54:50.711Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-12T16:54:50.753Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T08:45:54.504Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T08:46:32.190Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:14:55.501Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:14:55.548Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:16:56.900Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:16:56.942Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:19:19.412Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:19:19.455Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:37:05.919Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:37:05.965Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:47:02.571Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:47:02.619Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:55:35.601Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:55:35.652Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:57:45.387Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:57:45.431Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T09:59:14.820Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T09:59:14.875Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T10:09:37.730Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T10:09:37.774Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T10:33:59.848Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T10:33:59.893Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T10:43:26.672Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T10:43:26.715Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T11:02:59.541Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T11:02:59.586Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T11:24:13.024Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T11:24:13.067Z"}
+>>>>>>> Stashed changes
