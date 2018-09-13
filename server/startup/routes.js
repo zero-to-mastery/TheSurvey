@@ -1,7 +1,9 @@
 const express = require('express');
+const mongoose = require('mongoose');
 
 //require express-handlebars to render templates
 const exphbs = require('express-handlebars');
+const bodyParser = require('body-parser');
 
 const user = require('../routes/api/user');
 const surveys = require('../routes/api/surveys');
@@ -9,11 +11,15 @@ const surveys = require('../routes/api/surveys');
 module.exports = function (app) {
     app.use(express.json());
     app.use('/api/user', user);
-    app.use('/api/surveys', surveys);
+    app.use('/surveys', surveys);
     
     //Handlebars Middleware
     app.engine('handlebars', exphbs({defaultLayout: 'main'}));
     app.set('view engine', 'handlebars');
+    
+    //bodyParser Middleware
+    app.use(bodyParser.urlencoded({ extended: false }));
+    app.use(bodyParser.json());
 
     app.get('/', (req, res) => {
         const title = 'Hi Mom!';
