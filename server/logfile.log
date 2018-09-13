@@ -41,3 +41,9 @@
 {"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-11T16:58:15.230Z"}
 {"level":"info","message":"Listening on port 3005...","timestamp":"2018-09-11T16:59:18.797Z"}
 {"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-11T16:59:19.817Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T11:27:03.894Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T11:27:03.943Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T11:32:28.305Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T11:32:28.353Z"}
+{"level":"info","message":"Listening on port 8080...","timestamp":"2018-09-13T11:33:22.268Z"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/the_survey...","timestamp":"2018-09-13T11:33:22.312Z"}
