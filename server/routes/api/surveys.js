@@ -4,7 +4,7 @@ const SurveyController = require('../../controllers/surveyController')
 
 // Route for testing purposes - display survey form
 router.get('/add', (req, res) => {
-  res.render('surveys/add');
+    res.render('surveys/add');
 });
 
  // /api/surveys is default, all routes in this file start with this path
