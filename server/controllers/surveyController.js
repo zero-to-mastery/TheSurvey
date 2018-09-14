@@ -13,9 +13,11 @@ module.exports = {
             });
         // res.json({msg: 'get all surveys'}
     },
+
     getSurvey(req, res) {
         res.json({msg: `get specific survey (${req.params.surveyID})`})
     },
+
     postSurvey(req, res) {
         let errors = [];
 
@@ -47,9 +49,11 @@ module.exports = {
         }
         // res.json({msg: 'post new survey'})
     },
+
     updateSurvey(req, res) {
         res.json({msg: `update existing survey (${req.params.surveyID})`})
     },
+
     deleteSurvey(req, res) {
         res.json({msg: `delete existing survey (${req.params.surveyID})`})
     }
