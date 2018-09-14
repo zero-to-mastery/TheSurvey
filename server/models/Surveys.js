@@ -1,23 +1,26 @@
-/*This is is the schema for user created surveys*/
-
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
 
-//Create Schema
 const SurveySchema = new Schema({
     surveyId: { type: ObjectId },
     title: {
         type: String,
-        require: true
+        minlength: 3,
+        maxlength: 255,
+        required: true
     },
     question: {
         type: String,
-        require: true
+        minlength: 3,
+        maxlength: 255,
+        required: true
     },
     answer: {
         type: String,
-        require: true
+        minlength: 3,
+        maxlength: 255,
+        required: true
     },
     date: {
         type: Date,
