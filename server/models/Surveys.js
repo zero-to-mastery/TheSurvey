@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
 
 //Create Schema
-const surveySchema = new Schema({
+const SurveySchema = new Schema({
     surveyId: { type: ObjectId },
     title: {
         type: String,
@@ -25,4 +25,4 @@ const surveySchema = new Schema({
     }
 });
 
-mongoose.model('surveys', surveySchema);
+mongoose.model('surveys', SurveySchema);
