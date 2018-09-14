@@ -14,5 +14,3 @@ module.exports = {
 		res.send('Hellloow from userController again :)')
 	}
 }
-
-// ! What is this for?
