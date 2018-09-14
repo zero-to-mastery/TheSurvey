@@ -1,0 +1,14 @@
+{{#each surveys}}
+    <div class="card card-body mb-2">
+        <h3>{{title}}</h3>
+        <h4>{{question}}</h4>
+        <p>{{answer}}</p>
+        {{!--<a href="/ideas/edit/{{id}}" class="btn btn-dark btn-block mb-3">Edit</a>--}}
+        {{!--<form method="POST" action="/ideas/{{id}}?_method=DELETE">--}}
+        {{!--    <input type="hidden" name="_method" value="DELETE">--}}
+        {{!--    <input type="submit" class="btn btn-danger btn-block" value="Delete">--}}
+        {{!--</form>--}}
+    </div>
+{{else}}
+    <p class="lead">No Survey listed</p>
+{{/each}}
