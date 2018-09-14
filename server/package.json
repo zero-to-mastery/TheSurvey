@@ -21,6 +21,7 @@
     "morgan": "^1.9.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
+    "ramda": "^0.25.0",
     "winston": "^2.4.4",
     "winston-mongodb": "3.0.0"
   },
