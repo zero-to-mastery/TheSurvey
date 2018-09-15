@@ -19,7 +19,7 @@ module.exports = function(app) {
 	app.use('/api/user', user)
 
 	//Use surveys Router - this comes after middlewares
-	app.use('/surveys', surveys)
+	app.use('/api/surveys', surveys)
 
 	app.get('/', (req, res) => {
 		const title = 'Hi Mom!'
