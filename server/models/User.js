@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const { Schema } = mongoose
 
 // ? This creates a user schema obviously. What did you expect? duh!
-const userSchema = new Schema({
+const UserSchema = new Schema({
 	name: {
 		type: String,
 		required: true
@@ -22,4 +22,4 @@ const userSchema = new Schema({
 	}
 })
 
-mongoose.mode('users', userSchema)
+mongoose.model('user', UserSchema)
