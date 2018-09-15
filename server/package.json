@@ -8,15 +8,18 @@
   },
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "test": "jest --watchAll --verbose"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "cookie-session": "^2.0.0-beta.3",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "express-async-errors": "^3.0.0",
     "express-handlebars": "^3.0.0",
+    "joi": "^13.6.0",
     "mongoose": "^5.2.14",
     "morgan": "^1.9.1",
     "passport": "^0.4.0",
@@ -26,6 +29,8 @@
     "winston-mongodb": "3.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.4",
+    "supertest": "^3.3.0"
   }
 }
