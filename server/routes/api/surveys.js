@@ -11,7 +11,7 @@ router.get('/', SurveyController.getAllSurveys);
 
 router.get('/:surveyID', SurveyController.getSurvey);
 
-router.post('/', SurveyController.postSurvey);
+router.post('/', express.json(), SurveyController.postSurvey);
 
 router.put('/:surveyID', SurveyController.updateSurvey);
 

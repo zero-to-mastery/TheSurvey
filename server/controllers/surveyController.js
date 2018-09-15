@@ -1,6 +1,16 @@
 const mongoose = require("mongoose");
 require('../models/Surveys');
 const Survey = mongoose.model('surveys');
+const Joi = require('joi');
+
+function validateSurvey(survey) {
+    const schema = {
+        title: Joi.string().min(3).max(255).required(),
+        question: Joi.string().min(3).max(255).required(),
+        answer: Joi.string().min(3).max(255).required(),
+    };
+    return Joi.validate(survey, schema)
+}
 
 module.exports = {
     getAllSurveys(req, res) {
@@ -21,12 +31,9 @@ module.exports = {
     postSurvey(req, res) {
         let errors = [];
 
-        if(!req.body.title) {
-            errors.push({text: 'Please add a title'});
-        }
-        if(!req.body.question) {
-            errors.push({text: 'Please add the Question for this title'});
-        }
+        const { error } = validateSurvey(req.body);
+        if (error)
+            return res.status(400).send(error.details[0].message);
 
         if(errors.length > 0) {
             res.render('surveys/add', {
