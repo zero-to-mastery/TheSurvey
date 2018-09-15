@@ -7,14 +7,14 @@ router.get('/add', (req, res) => {
     res.render('surveys/add');
 });
 
-router.get('/', SurveyController.getAllSurveys);
+router.get('/', SurveyController.index);
 
-router.get('/:surveyID', SurveyController.getSurvey);
+router.get('/:id', SurveyController.view);
 
-router.post('/', SurveyController.postSurvey);
+router.post('/', SurveyController.create);
 
-router.put('/:surveyID', SurveyController.updateSurvey);
+router.put('/:id', SurveyController.edit);
 
-router.delete('/:surveyID', SurveyController.deleteSurvey);
+router.delete('/:id', SurveyController.delete);
 
 module.exports = router;

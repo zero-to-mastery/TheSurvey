@@ -1,60 +1,63 @@
-const mongoose = require("mongoose");
-require('../models/Surveys');
-const Survey = mongoose.model('surveys');
+const Survey = require('../models/Surveys');
+const Joi = require('joi');
+
+function validateSurvey(survey) {
+    const schema = {
+        title: Joi.string().min(3).max(255).required(),
+        question: Joi.string().min(5).max(255).required(),
+        answer: Joi.date().required(),
+    };
+    return Joi.validate(survey, schema)
+}
 
 module.exports = {
-    getAllSurveys(req, res) {
-        Survey.find({})
-            .sort({date: 'desc'})
-            .then(surveys => {
-               res.render('surveys/index', {
-                   surveys: surveys
-               });
-            });
-        // res.json({msg: 'get all surveys'}
+    index: async (req, res) => {
+        const surveys = await Survey.find().sort('title');
+        res.send(surveys);
     },
 
-    getSurvey(req, res) {
-        res.json({msg: `get specific survey (${req.params.surveyID})`})
+    create: async (req, res) => {
+        const { error } = validateSurvey(req.body);
+        if (error)
+            return res.status(400).send(error.details[0].message);
+
+        const duplicate = await Survey.findOne({ title: req.body.title});
+        if (duplicate)
+            return res.status(400).send('Survey already exists');
+
+        const survey = new Survey({
+            title: req.body.title,
+            question: req.body.question,
+            answer: req.body.answer,
+        });
+        await survey.save();
+        res.send(survey)
     },
 
-    postSurvey(req, res) {
-        let errors = [];
-
-        if(!req.body.title) {
-            errors.push({text: 'Please add a title'});
-        }
-        if(!req.body.question) {
-            errors.push({text: 'Please add the Question for this title'});
-        }
-
-        if(errors.length > 0) {
-            res.render('surveys/add', {
-                errors: errors,
-                title: req.body.title,
-                question: req.body.question,
-                answer: req.body.answer
-            });
-        } else {
-            const newSurvey = {
-                title: req.body.title,
-                question: req.body.question,
-                answer: req.body.answer
-            };
-            new Survey(newSurvey)
-                .save()
-                .then(surveys => {
-                    res.redirect('/surveys');
-                });
-        }
-        // res.json({msg: 'post new survey'})
+    view: async (req, res) => {
+        const survey = await Survey.findById(req.params.id);
+        if (!survey) return res.status(404).send('The survey was not found');
+        res.send(survey);
     },
 
-    updateSurvey(req, res) {
-        res.json({msg: `update existing survey (${req.params.surveyID})`})
+    edit: async (req, res) => {
+        const { error } = validateSurvey(req.body);
+        if (error)
+            return res.status(400).send(error.details[0].message);
+
+        const survey = await Survey.findByIdAndUpdate(req.params.id, {
+            title: req.body.title,
+            question: req.body.question,
+            answer: req.body.answer,
+        }, { new: true });
+
+        if (!survey) return res.status(404).send('The survey with the given ID was not found.');
+        res.send(survey);
     },
 
-    deleteSurvey(req, res) {
-        res.json({msg: `delete existing survey (${req.params.surveyID})`})
-    }
-}
+    delete: async (req, res) => {
+        const survey = await Survey.findByIdAndRemove(req.params.id);
+        if (!survey) return res.status(404).send('The survey with the given ID was not found.');
+        res.send(survey);
+    },
+};
