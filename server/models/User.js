@@ -1,10 +1,11 @@
-const mongoose = require('mongoose')
-const { Schema } = mongoose
+const mongoose = require('mongoose');
+const Schema  = mongoose.Schema;
 
-// ? This creates a user schema obviously. What did you expect? duh!
 const UserSchema = new Schema({
 	name: {
 		type: String,
+		minlength: 1,
+		maxlength: 30,
 		required: true
 	},
 	email: {
@@ -14,12 +15,16 @@ const UserSchema = new Schema({
 	},
 	password: {
 		type: String,
+        minlength: 6,
+        maxlength: 64,
 		required: true
 	},
 	date: {
 		type: Date,
 		default: Date.now
 	}
-})
+});
 
-mongoose.model('user', UserSchema)
+const User = mongoose.model('user', UserSchema);
+
+module.exports = User;
