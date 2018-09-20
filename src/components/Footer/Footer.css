@@ -1,0 +1,65 @@
+/* This is the corresponding css file for the footer in all html pages */
+.footer {
+	background: #000000;
+	color: #ffffff;
+}
+
+.bottomText {
+	text-align: center;
+}
+
+.links {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	margin-bottom: 4vw;
+}
+
+.theLinks {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.linksTitle {
+	font-size: 2vw;
+}
+
+.linksTitle,
+.initiative,
+.bottomText {
+	margin-top: 1vw;
+	padding: 1vw 0;
+}
+
+.bottomText span {
+	cursor: pointer;
+	transition: color .2s ease-in-out;
+}
+
+.bottomText span:hover {
+	color: #7fbb00;
+}
+
+.theLinks a {
+	text-decoration: none;
+	color: #ffffff;
+	padding: .5vw;
+	transition: color .2s ease-in-out;
+}
+
+.theLinks a:hover {
+	text-decoration: underline;
+	color: #7fbb00;
+}
+.ztmLogo img {
+	max-width: 14vw;
+	max-height: 14vw;
+	width: 100%;
+	height: 100%;
+	opacity: .8;
+	border-radius: 1vw;
+	cursor: pointer;
+}
