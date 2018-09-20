@@ -1,44 +1,42 @@
 /*
-
-Some Boilerplate Code That I usually use in projects To Prevent
-Unexpected Behavior From Browsers' User Agent Style Sheet. In Other Words,
-This Is a CSS Reset.
-
+This is a CSS Reset.
 */
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: auto;
-  font-family: 'Roboto', sans-serif;
-  color: #808182;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	font-family: 'Roboto', sans-serif;
+	color: #808182;
 }
 
 * {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
+
 ::selection {
-  color: #ffffff;
-  background: #7fbb00;
+	color: #ffffff;
+	background: #7fbb00;
 }
+
 :focus {
-  outline: 0;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
+	outline: 0;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
 }
 
 .center {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .displayNone {
-  display: none;
+	display: none;
 }

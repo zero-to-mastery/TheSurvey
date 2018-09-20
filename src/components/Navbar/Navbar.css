@@ -1,5 +1,3 @@
-/* Styles of the navbar */
-
 .navbar {
     position: relative;
     top: 0;
@@ -13,35 +11,36 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-  }
+}
   
-  .logoWithText {
+.logoWithText {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-  }
+}
   
-  .logo {
+.logo {
     width: 4vw;
     padding-left: 1vw;
-  }
-  .logo img {
+}
+
+.logo img {
     max-width: 4vw;
     max-height: 4vw;
     width: 100%;
     height: 100%;
-  }
+}
   
-  .text {
+.text {
     font-size: 2vw;
     letter-spacing: .15vw;
     padding: 1vw .2vw;
-  }
+}
   
-  .signup a {
+.signup a {
     font-size: 1.18vw;
     letter-spacing: .18vw;
     padding: .7vw;
@@ -52,24 +51,23 @@
     border-radius: .5vw;
     background: #7fbb00;
     transition: background .15s ease-in-out;
-  }
+}
   
-  .signup a:hover {
+.signup a:hover {
     background: #75a902;
-  }
-  
-  /* Mobile Responsive Design */
-  
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .logoWithText {
-      margin: 0 auto;
+}
+
+/* Mobile Responsive Design */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.logoWithText {
+		margin: 0 auto;
     }
     .logo img {
-      max-width: 7vw;
-      max-height: 7vw;
+		max-width: 7vw;
+      	max-height: 7vw;
     }
     .text {
-      font-size: 7vw;
-      letter-spacing: .2vw;
+		font-size: 7vw;
+		letter-spacing: .2vw;
     }
   }

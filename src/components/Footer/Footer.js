@@ -42,9 +42,10 @@ const Footer = () => {
 		<div class="bottomText">
 			<span>Made With
 				<span role="img" aria-label="Black Heart" className="love">🖤</span>
-				By The ZTM Community</span>
+				By The ZTM Community
+			</span>
 		</div>
-	</div>
+		</div>
     ]
 }
 

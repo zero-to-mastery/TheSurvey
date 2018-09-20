@@ -1,4 +1,3 @@
-/* This is the corresponding css file for the footer in all html pages */
 .footer {
 	background: #000000;
 	color: #ffffff;
@@ -54,6 +53,7 @@
 	text-decoration: underline;
 	color: #7fbb00;
 }
+
 .ztmLogo img {
 	max-width: 14vw;
 	max-height: 14vw;
