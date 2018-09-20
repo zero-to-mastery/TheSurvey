@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import SetNewPassword from '../components/SetNewPassword/SetNewPassword';
+import NewPasswordSet from '../components/NewPasswordSet/NewPasswordSet';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <SetNewPassword />
+        <NewPasswordSet />
       </div>
     );
   }
