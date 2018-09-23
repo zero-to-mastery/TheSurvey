@@ -21,7 +21,7 @@ module.exports = {
         if (error)
             return res.status(400).send(error.details[0].message);
 
-        const duplicate = await Survey.findOne({ title: req.body.title});
+        const duplicate = await Survey.findOne({title: req.body.title});
         if (duplicate)
             return res.status(400).send('Survey already exists');
 
