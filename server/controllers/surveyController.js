@@ -38,23 +38,21 @@ module.exports = {
     view: async (req, res) => {
         const id = req.params.id
         const isValidObjectId = ObjectId.isValid(id)
-        if (!isValidObjectId) {
-          return res.status(400).send('Survey ID is not valid')
-        }
+        if (!isValidObjectId)
+            return res.status(400).send('Survey ID is not valid');
 
         const survey = await Survey.findById(id);
-        if (!survey) {
-          return res.status(404).send('The survey with the given ID was not found');
-        }
+        if (!survey)
+            return res.status(404).send('The survey with the given ID was not found');
+
         res.send(survey);
     },
 
     edit: async (req, res) => {
         const id = req.params.id
         const isValidObjectId = ObjectId.isValid(id)
-        if (!isValidObjectId) {
-          return res.status(400).send('Survey ID is not valid')
-        }
+        if (!isValidObjectId)
+            return res.status(400).send('Survey ID is not valid');
 
         const { error } = validateSurvey(req.body);
         if (error)
@@ -65,20 +63,22 @@ module.exports = {
             question: req.body.question,
             answer: req.body.answer,
         }, { new: true });
+        if (!survey)
+            return res.status(404).send('The survey with the given ID was not found');
 
-        if (!survey) return res.status(404).send('The survey with the given ID was not found');
         res.send(survey);
     },
 
     delete: async (req, res) => {
         const id = req.params.id
         const isValidObjectId = ObjectId.isValid(id)
-        if (!isValidObjectId) {
-          return res.status(400).send('Survey ID is not valid')
-        }
+        if (!isValidObjectId)
+            return res.status(400).send('Survey ID is not valid');
 
         const survey = await Survey.findByIdAndRemove(req.params.id);
-        if (!survey) return res.status(404).send('The survey with the given ID was not found');
+        if (!survey)
+            return res.status(404).send('The survey with the given ID was not found');
+
         res.send(survey);
     },
 };
