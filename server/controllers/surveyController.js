@@ -1,5 +1,5 @@
 const Survey = require('../models/Surveys');
-const mongoose = require('mongoose');
+const { Types: { ObjectId } } = require('mongoose');
 const Joi = require('joi');
 
 function validateSurvey(survey) {
@@ -37,7 +37,7 @@ module.exports = {
 
     view: async (req, res) => {
         const id = req.params.id
-        const isValidObjectId = mongoose.Types.ObjectId.isValid(id)
+        const isValidObjectId = ObjectId.isValid(id)
         if (!isValidObjectId) {
           return res.status(400).send('Survey ID is not valid')
         }
@@ -51,7 +51,7 @@ module.exports = {
 
     edit: async (req, res) => {
         const id = req.params.id
-        const isValidObjectId = mongoose.Types.ObjectId.isValid(id)
+        const isValidObjectId = ObjectId.isValid(id)
         if (!isValidObjectId) {
           return res.status(400).send('Survey ID is not valid')
         }
@@ -72,7 +72,7 @@ module.exports = {
 
     delete: async (req, res) => {
         const id = req.params.id
-        const isValidObjectId = mongoose.Types.ObjectId.isValid(id)
+        const isValidObjectId = ObjectId.isValid(id)
         if (!isValidObjectId) {
           return res.status(400).send('Survey ID is not valid')
         }

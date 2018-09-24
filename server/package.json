@@ -28,6 +28,10 @@
     "winston-mongodb": "3.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "chai": "^4.1.2",
+    "chai-asserttype": "^1.0.5",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "supertest": "^3.3.0"
   }
 }
