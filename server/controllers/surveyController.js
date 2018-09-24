@@ -1,4 +1,5 @@
 const Survey = require('../models/Surveys');
+const mongoose = require('mongoose');
 const Joi = require('joi');
 
 function validateSurvey(survey) {
@@ -35,12 +36,26 @@ module.exports = {
     },
 
     view: async (req, res) => {
-        const survey = await Survey.findById(req.params.id);
-        if (!survey) return res.status(404).send('The survey was not found');
+        const id = req.params.id
+        const isValidObjectId = mongoose.Types.ObjectId.isValid(id)
+        if (!isValidObjectId) {
+          return res.status(400).send('Survey ID is not valid')
+        }
+
+        const survey = await Survey.findById(id);
+        if (!survey) {
+          return res.status(404).send('The survey with the given ID was not found');
+        }
         res.send(survey);
     },
 
     edit: async (req, res) => {
+        const id = req.params.id
+        const isValidObjectId = mongoose.Types.ObjectId.isValid(id)
+        if (!isValidObjectId) {
+          return res.status(400).send('Survey ID is not valid')
+        }
+
         const { error } = validateSurvey(req.body);
         if (error)
             return res.status(400).send(error.details[0].message);
@@ -51,13 +66,19 @@ module.exports = {
             answer: req.body.answer,
         }, { new: true });
 
-        if (!survey) return res.status(404).send('The survey with the given ID was not found.');
+        if (!survey) return res.status(404).send('The survey with the given ID was not found');
         res.send(survey);
     },
 
     delete: async (req, res) => {
+        const id = req.params.id
+        const isValidObjectId = mongoose.Types.ObjectId.isValid(id)
+        if (!isValidObjectId) {
+          return res.status(400).send('Survey ID is not valid')
+        }
+
         const survey = await Survey.findByIdAndRemove(req.params.id);
-        if (!survey) return res.status(404).send('The survey with the given ID was not found.');
+        if (!survey) return res.status(404).send('The survey with the given ID was not found');
         res.send(survey);
     },
 };

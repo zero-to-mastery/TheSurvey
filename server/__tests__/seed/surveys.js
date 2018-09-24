@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const Survey = require('../../models/Surveys')
-mongoose.set('useCreateIndex', true);
 
 const surveyOneID = mongoose.Types.ObjectId();
 const surveyTwoID = mongoose.Types.ObjectId();
