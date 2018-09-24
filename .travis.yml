@@ -8,6 +8,7 @@ script:
   - npm run test
   - npm run build
   - cd server
+  - npm install
   - npm run test
 deploy:
   provider: pages
