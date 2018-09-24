@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - "stable"
+install:
+  - npm install
 cache:
   directories:
   - node_modules
@@ -8,7 +10,6 @@ script:
   - npm run test
   - npm run build
   - cd server
-  - npm install
   - npm run test
 deploy:
   provider: pages
