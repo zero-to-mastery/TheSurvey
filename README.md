@@ -19,12 +19,12 @@ Currently in BETA - https://zero-to-mastery.github.io/TheSurvey/
         `MONGO_DB=mongodb://localhost:27017/the_survey
          PORT=3005`
        in order for this to work :)
-    - Then run the command `npm run`
+    - Then run the command `npm start`
 
 - ### Front-End 
     - In the root directory of the project:
     - Install NPM dependencies `npm install`
-    - Then run the command `npm run`
+    - Then run the command `npm start`
 
 ## Important Notes
 - Always make PR in **development** branch and **NOT** in **master** branch.
