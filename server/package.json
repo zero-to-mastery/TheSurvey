@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "test": "export NODE_ENV=test && export MONGO_DB=mongodb://localhost:27017/TheSurvey && mocha \"__tests__/**/*@(.spec.js)\""
+    "test": "export NODE_ENV=test && export MONGO_DB=mongodb://localhost:27017/TheSurvey && mocha --exit \"__tests__/**/*@(.spec.js)\""
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
