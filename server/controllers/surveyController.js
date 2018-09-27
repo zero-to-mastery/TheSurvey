@@ -1,4 +1,5 @@
 const Survey = require('../models/Surveys');
+const { Types: { ObjectId } } = require('mongoose');
 const Joi = require('joi');
 
 function validateSurvey(survey) {
@@ -21,7 +22,7 @@ module.exports = {
         if (error)
             return res.status(400).send(error.details[0].message);
 
-        const duplicate = await Survey.findOne({ title: req.body.title});
+        const duplicate = await Survey.findOne({title: req.body.title});
         if (duplicate)
             return res.status(400).send('Survey already exists');
 
@@ -35,12 +36,24 @@ module.exports = {
     },
 
     view: async (req, res) => {
-        const survey = await Survey.findById(req.params.id);
-        if (!survey) return res.status(404).send('The survey was not found');
+        const id = req.params.id
+        const isValidObjectId = ObjectId.isValid(id)
+        if (!isValidObjectId)
+            return res.status(400).send('Survey ID is not valid');
+
+        const survey = await Survey.findById(id);
+        if (!survey)
+            return res.status(404).send('The survey with the given ID was not found');
+
         res.send(survey);
     },
 
     edit: async (req, res) => {
+        const id = req.params.id
+        const isValidObjectId = ObjectId.isValid(id)
+        if (!isValidObjectId)
+            return res.status(400).send('Survey ID is not valid');
+
         const { error } = validateSurvey(req.body);
         if (error)
             return res.status(400).send(error.details[0].message);
@@ -50,14 +63,22 @@ module.exports = {
             question: req.body.question,
             answer: req.body.answer,
         }, { new: true });
+        if (!survey)
+            return res.status(404).send('The survey with the given ID was not found');
 
-        if (!survey) return res.status(404).send('The survey with the given ID was not found.');
         res.send(survey);
     },
 
     delete: async (req, res) => {
+        const id = req.params.id
+        const isValidObjectId = ObjectId.isValid(id)
+        if (!isValidObjectId)
+            return res.status(400).send('Survey ID is not valid');
+
         const survey = await Survey.findByIdAndRemove(req.params.id);
-        if (!survey) return res.status(404).send('The survey with the given ID was not found.');
+        if (!survey)
+            return res.status(404).send('The survey with the given ID was not found');
+
         res.send(survey);
     },
 };
