@@ -1,15 +1,13 @@
 const express = require('express')
 const cookieSession = require('cookie-session')
 const passport = require('passport')
-const bodyParser = require('body-parser')
 const app = express()
 const authKeys = require('./authKeys') // * Keep it below the 'dotenv'
 
 require('../../models/User')
 require('./passport')
 
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(express.json())
 // ? Using cookie based sessions and defining max Age of a cookie + cookie secret (key)
 app.use(
 	cookieSession({
