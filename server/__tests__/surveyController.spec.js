@@ -158,7 +158,7 @@ describe('POST /api/surveys', () => {
         if(err)
           return done(err);
         done();
-      })
+      });
   });
 });
 
