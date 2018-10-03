@@ -29,36 +29,36 @@ describe('GET /api/surveys', () => {
         if(err)
           return done(err);
         done();
-      })
+      });
   });
 });
 
 describe('GET /api/surveys/:id', () => {
   it('should return proper message if ID is not valid', done => {
     request(app)
-    .get(`/api/surveys/${123456789}`)
-    .expect(400)
-    .expect(res => {
-      expect(res.error.text).to.equal('Survey ID is not valid')
-    })
-    .end(err => {
-      if(err)
-      return done(err);
-      done();
-    })
+      .get(`/api/surveys/${123456789}`)
+      .expect(400)
+      .expect(res => {
+        expect(res.error.text).to.equal('Survey ID is not valid')
+      })
+      .end(err => {
+        if(err)
+          return done(err);
+        done();
+      });
   });
   it('should return proper message if ID is not found', done => {
     request(app)
-    .get(`/api/surveys/${mongoose.Types.ObjectId()}`)
-    .expect(404)
-    .expect(res => {
-      expect(res.error.text).to.equal('The survey with the given ID was not found')
-    })
-    .end(err => {
-      if(err)
-      return done(err);
-      done();
-    })
+      .get(`/api/surveys/${mongoose.Types.ObjectId()}`)
+      .expect(404)
+      .expect(res => {
+        expect(res.error.text).to.equal('The survey with the given ID was not found')
+      })
+      .end(err => {
+        if(err)
+          return done(err);
+        done();
+      });
   });
   it('should return specific survey', done => {
     request(app)
@@ -75,7 +75,7 @@ describe('GET /api/surveys/:id', () => {
         if(err)
           return done(err);
         done();
-      })
+      });
   });
 });
 
@@ -174,9 +174,9 @@ describe('PUT /api/surveys/:id', () => {
         })
         .end(err => {
           if(err)
-          return done(err);
+            return done(err);
           done();
-        })
+        });
     });
     it('should return proper message if ID is not found', done => {
       const survey = {
@@ -193,9 +193,9 @@ describe('PUT /api/surveys/:id', () => {
         })
         .end(err => {
           if(err)
-          return done(err);
+            return done(err);
           done();
-        })
+        });
     });
   });
   describe('when ID is ok', () => {
@@ -206,17 +206,17 @@ describe('PUT /api/surveys/:id', () => {
         answer: "Answer 2"
       }
       request(app)
-      .put(`/api/surveys/${surveys[0]._id}`)
-      .send(survey)
-      .expect(400)
-      .expect(res => {
-        expect(res.error.text).to.equal('"title" is not allowed to be empty');
-      })
-      .end(err => {
-        if(err)
-        return done(err);
-        done();
-      });
+        .put(`/api/surveys/${surveys[0]._id}`)
+        .send(survey)
+        .expect(400)
+        .expect(res => {
+          expect(res.error.text).to.equal('"title" is not allowed to be empty');
+        })
+        .end(err => {
+          if(err)
+            return done(err);
+          done();
+        });
     });
     it('should return proper message if survey title is not valid', done => {
       const survey = {
@@ -225,17 +225,17 @@ describe('PUT /api/surveys/:id', () => {
         answer: "Answer 2"
       }
       request(app)
-      .put(`/api/surveys/${surveys[0]._id}`)
-      .send(survey)
-      .expect(400)
-      .expect(res => {
-        expect(res.error.text).to.equal('"title" length must be at least 3 characters long');
-      })
-      .end(err => {
-        if(err)
-        return done(err);
-        done();
-      });
+        .put(`/api/surveys/${surveys[0]._id}`)
+        .send(survey)
+        .expect(400)
+        .expect(res => {
+          expect(res.error.text).to.equal('"title" length must be at least 3 characters long');
+        })
+        .end(err => {
+          if(err)
+            return done(err);
+          done();
+        });
     });
     it('should return updated survey', done => {
       const survey = {
@@ -244,21 +244,21 @@ describe('PUT /api/surveys/:id', () => {
         answer: "Answer 3"
       }
       request(app)
-      .put(`/api/surveys/${surveys[0]._id}`)
-      .send(survey)
-      .expect(200)
-      .expect(res => {
-        expect(res.body.date).to.be.ok;
-        expect(res.body._id).to.be.ok;
-        expect(res.body.title).to.equal(survey.title);
-        expect(res.body.question).to.equal(survey.question);
-        expect(res.body.answer).to.equal(survey.answer);
-      })
-      .end(err => {
-        if(err)
-        return done(err);
-        done();
-      });
+        .put(`/api/surveys/${surveys[0]._id}`)
+        .send(survey)
+        .expect(200)
+        .expect(res => {
+          expect(res.body.date).to.be.ok;
+          expect(res.body._id).to.be.ok;
+          expect(res.body.title).to.equal(survey.title);
+          expect(res.body.question).to.equal(survey.question);
+          expect(res.body.answer).to.equal(survey.answer);
+        })
+        .end(err => {
+          if(err)
+            return done(err);
+          done();
+        });
     });
   })
 });
@@ -273,9 +273,9 @@ describe('DELETE /api/surveys/:id', () => {
       })
       .end(err => {
         if(err)
-        return done(err);
+          return done(err);
         done();
-      })
+      });
   });
   it('should return proper message if ID is not found', done => {
     request(app)
@@ -286,25 +286,25 @@ describe('DELETE /api/surveys/:id', () => {
       })
       .end(err => {
         if(err)
-        return done(err);
+          return done(err);
         done();
-      })
+      });
   });
   it('should return removed survey', done => {
     request(app)
-    .delete(`/api/surveys/${surveys[0]._id}`)
-    .expect(200)
-    .expect(res => {
-      expect(res.body.date).to.be.ok;
-      expect(res.body._id).to.equal(surveys[0]._id.toHexString());
-      expect(res.body.title).to.equal(surveys[0].title);
-      expect(res.body.question).to.equal(surveys[0].question);
-      expect(res.body.answer).to.equal(surveys[0].answer);
-    })
-    .end(err => {
-      if(err)
-      return done(err);
-      done();
-    })
+      .delete(`/api/surveys/${surveys[0]._id}`)
+      .expect(200)
+      .expect(res => {
+        expect(res.body.date).to.be.ok;
+        expect(res.body._id).to.equal(surveys[0]._id.toHexString());
+        expect(res.body.title).to.equal(surveys[0].title);
+        expect(res.body.question).to.equal(surveys[0].question);
+        expect(res.body.answer).to.equal(surveys[0].answer);
+      })
+      .end(err => {
+        if(err)
+          return done(err);
+        done();
+      });
   });
 });
